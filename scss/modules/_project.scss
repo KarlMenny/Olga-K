@@ -1,0 +1,136 @@
+.project {
+	counter-reset: project;
+	margin-bottom: 75px;
+
+		&__item {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+		}
+
+		&__item--margin--top-1 {
+			margin-top: 45px;
+		}
+
+		&__item--margin--top-2 {
+			margin-top: 76px;
+		}
+
+		&__item--margin--bottom {
+			margin-bottom: 80px;
+		}
+
+		&__item-last {
+			text-align: center;				
+		}
+
+		&__link {
+			-ms-flex-negative: 0;
+			    flex-shrink: 0;
+			@include size(550px, 430px);
+			margin-right: 118px;
+			-webkit-box-shadow: 0 49px 35px rgba(0,0,0,0.15);
+			        box-shadow: 0 49px 35px rgba(0,0,0,0.15);
+		}
+
+		&__link--margin {
+			margin-right: 0;
+		}
+
+		&__link-shadow {
+			-webkit-box-shadow: 0 49px 35px rgba(0,0,0,0.15);
+			        box-shadow: 0 49px 35px rgba(0,0,0,0.15);
+			@include size(370px, 283px);
+		}
+
+		&__img {
+			@include size(550px, 430px);
+		}
+
+		&__img:hover {
+			-webkit-filter: brightness(90%);
+			        filter: brightness(90%);
+		}
+
+		&__img--size {
+			@include size(370px, 283px);
+		}
+
+		&__img-container {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+		}
+
+		&__info {
+			padding-right: 60px;
+		}
+
+		&__info--padding {
+			padding-right: 155px;
+		}
+
+		&__title {
+			font-weight: 700;
+			font-size: 24px;
+			margin-bottom: 85px;
+			position: relative;
+			display: inline-block;
+		}
+
+		&__title::before {
+			counter-increment: project;
+			content: "0" counter(project);
+			font-weight: 700;
+			font-size: 70px;
+			color: #d3d3d3;
+			position: absolute;
+			top: -32px;
+			left: -2px;
+			z-index: -1;
+		}
+
+		&__title--margin {
+			margin-bottom: 32px;
+		}
+
+		&__text {
+			margin-bottom: 33px;
+			text-align: justify;
+		}
+
+		&__text--t-align {
+			text-align: inherit;
+		}
+
+		&__wrapper {
+			margin-bottom: 25px;
+		}
+
+		&__text-last {
+			display: inline-block;
+			text-align: initial;
+		}
+
+		&__button {
+			display: block;
+			@include size(248px, 43px);
+			font-size: 16px;
+			text-align: center;
+			border: 1px solid #000;
+			border-radius: 5px;
+			line-height: 43px;
+			text-decoration: none;
+			color: #000;
+		}
+
+		&__button:hover {
+			background: rgba(211, 211, 211, .7);
+		}
+}

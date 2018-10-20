@@ -1,0 +1,81 @@
+.form {
+	padding-top: 5px;
+
+		&__wrapper-name {
+			position: relative;
+			margin-bottom: 25px;
+		}
+
+		&__field-name,
+		&__field-email,
+		&__field-message,
+		&__btn {
+			display: block;
+			width: 370px;
+			height: 45px;
+			padding: 5px;
+			border: 1px solid #000;
+			border-radius: 3px;
+			font: 14px "Open Sans", sans-serif;
+ 		}
+
+		&__label-name,
+		&__label-email,
+		&__label-message {
+			position: absolute;
+			bottom: 32%;
+			padding-left: 5px;
+		}
+
+		&__field-name:focus,
+		&__field-email:focus,
+		&__field-message:focus {
+			border-color: #d3d3d3;
+		}
+
+		&__field-name:focus + &__label-name,
+		&__field-email:focus + &__label-email,
+		&__field-message:focus + &__label-message {
+			bottom: 100%;
+			color: #d3d3d3;
+			text-transform: uppercase;
+		}
+
+		&__field-name:valid,
+		&__field-email:valid,
+		&__field-message:valid {
+			border-color: #055311;
+		}
+		
+		&__field-name:valid + &__label-name,
+		&__field-email:valid + &__label-email,
+		&__field-message:valid + &__label-message {
+			bottom: 100%;
+			color: #055311;
+			text-transform: uppercase;
+		}	
+
+		&__field-message {
+			height: 115px;
+			resize: none;
+		}
+
+		&__label-message {
+			bottom: 77%;
+		}
+
+		&__btn {
+			width: 250px;
+			float: right;
+			line-height: 45px;
+			padding: 0;
+			margin-bottom: 0;
+			border-radius: 5px;
+			background: #fff;
+			cursor: pointer;
+		}
+
+		&__btn:hover {
+			background: $btn-h; 
+		}
+}

@@ -1,0 +1,80 @@
+.header {
+	height: 100vh;
+	padding-top: 20px;
+	position: relative;
+	background: url(../images/hero_image.png) no-repeat;
+	background-size: cover;
+	background-position: 0 -105px;
+	color: #fff;
+	margin-bottom: 140px;
+
+		&__nav {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: end;
+			    -ms-flex-pack: end;
+			        justify-content: flex-end;
+		}
+
+		&__items {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		&__item {
+			margin-right: 185px;
+		}
+
+		&__item:hover {
+			-webkit-transform: scale(1.2);
+			    -ms-transform: scale(1.2);
+			        transform: scale(1.2);
+		}
+
+		&__item--margin {
+			margin-right: 180px;
+		}
+
+		&__link {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		&__author {
+			font-size: 36px;
+			@include pos($r: 399px, $b: 410px);		
+			position: absolute;
+		}
+
+		&__shift {
+			padding-left: 28px;
+			@include pos(relative, $t: -8px);
+		}
+
+		&__shift::before {
+			content: "";
+			height: 1px;
+			width: 47px;
+			background: #fff;
+			@include pos($t: 50%, $l: -28px);
+		}
+
+		&__scroll {
+			-webkit-writing-mode: tb-rl;
+			    -ms-writing-mode: tb-rl;
+			        writing-mode: tb-rl;
+			font-size: 12px;
+			display: inline-block;
+			@include pos($b: 450px, $r: 141px);
+		}
+	
+    	&__scroll::after {
+			content: "";
+			width: 1px;
+			height: 279px;
+			background: #fff;
+			@include pos($t: -10em, $r: -10px);
+		}
+}

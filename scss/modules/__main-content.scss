@@ -1,0 +1,29 @@
+.main-content {
+	padding: 0 100px;
+	counter-reset: main 1;
+	margin-bottom: 79px;
+
+		&__title {
+			font-weight: 700;
+			font-size: 30px;
+			position: relative;
+			padding-left: 68px;
+		}
+
+		&__title--padding {
+			padding-left: 50px;
+		}
+
+		&__title::before {
+			counter-increment: main;	
+			content: "00" counter(main);	
+			font-weight: 700;
+			font-size: 70px;
+			color: rgba(151, 15, 0, .85);
+			position: absolute;
+			left: -2px;
+			top: -29px;
+			z-index: -1;
+		}
+}
+

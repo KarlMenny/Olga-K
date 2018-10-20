@@ -1,0 +1,14 @@
+.about {
+	position: relative;
+	margin-bottom: 145px;
+
+		&__text {
+			width: 596px;
+			text-align: justify;
+			margin-top: 65px;
+		}
+
+		&__img {
+			@include pos($r: 10px, $b: -100px);
+		}
+}
